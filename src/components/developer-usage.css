@@ -1,0 +1,9 @@
+.developer-usage { margin: 20px 34px 30px; border-top: 1px dashed #dce3d6; color: #66745e; font-size: 12px; }
+.developer-usage summary { cursor: pointer; padding: 14px 0; width: fit-content; }
+.developer-usage > div { max-width: 640px; padding-bottom: 12px; }
+.developer-usage p { line-height: 1.7; }
+.developer-usage dl { margin: 16px 0; }
+.developer-usage dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid #e5eadd; }
+.developer-usage dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.developer-usage small { display: block; margin-top: 4px; font-size: 10px; overflow-wrap: anywhere; }
+@media(max-width: 700px) { .developer-usage { margin: 16px; } .developer-usage summary, .developer-usage button { min-height: 44px; } }

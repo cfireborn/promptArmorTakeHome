@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.DS_Store
+.env*
+!.env.example
+test-results/
+playwright-report/
+.capture/
+demo-deliverables/
+*.tsbuildinfo
+backend/.wrangler/
+backend/.dev.vars
+
+# Development-only documentation and media production
+/docs/demo/
+/docs/architecture*.txt
+/scripts/capture*.mjs
+/scripts/record*.mjs
+/scripts/compose-demo.mjs
+/scripts/*ffmpeg*
+/scripts/*narrat*
+/scripts/*audio*
+/scripts/*video*

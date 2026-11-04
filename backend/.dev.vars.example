@@ -1,0 +1,16 @@
+# Copy to .dev.vars for local development. Set real values with wrangler secret put for production.
+DEMO_SETUP_KEY=replace-with-a-random-secret-of-at-least-32-characters
+SLACK_BOT_TOKEN=replace-with-the-installed-bot-token
+SLACK_SIGNING_SECRET=replace-with-the-app-signing-secret
+SLACK_TEAM_ID=replace-with-the-demo-workspace-id
+SLACK_CHANNEL_ID=replace-with-the-relay-demo-channel-id
+SLACK_ALLOWED_USER_IDS=replace-with-authorized-creative-member-ids-comma-separated
+
+# Trusted owner routing; IDs must also appear in SLACK_ALLOWED_USER_IDS.
+SLACK_OWNER_MAP='{"Maya Chen":{"userId":"U12345678","displayName":"Demo recipient","isProxy":true},"Jordan Lee":{"userId":"U12345678","displayName":"Demo recipient","isProxy":true},"Sofia Patel":{"userId":"U12345678","displayName":"Demo recipient","isProxy":true}}'
+
+# Optional per-person channels. Invite the bot to each channel; chat:write is enough.
+# Add channelId and channelName to each owner entry above, for example:
+# "Maya Chen":{"userId":"U12345678","displayName":"Charlie","isProxy":true,"channelId":"C12345678","channelName":"maya-chen-marketing"}
+# Existing cards stay bound to their original channel. Omit routing to retain #relay-demo.
+SLACK_REVIEWER_MAP='{"Alex Morgan":{"userId":"U12345678","displayName":"Charlie","isProxy":true,"channelId":"C87654321","channelName":"alex-morgan-compliance"}}'

@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "clearpath-relay-demo",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  // Temporary public-demo windows; expiry falls back to the original caps.
+  "vars": {
+    "AI_DEMO_RATE_BOOST_UNTIL": "2026-11-04T15:10:00Z",
+    "AI_DEMO_BOOST_UNTIL": "2026-11-05T03:10:00Z"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "relay-demo",
+    "database_id": "d71914f3-8710-4796-9804-8fd5405fc0eb"
+  }]
+}

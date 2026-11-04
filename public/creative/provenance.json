@@ -1,0 +1,15 @@
+{
+  "tool": "OpenAI Imagegen (built-in image_gen.imagegen)",
+  "created": "2026-11-02",
+  "runtime": "The app replays these prepared assets; it does not call Imagegen at runtime.",
+  "original": {
+    "file": "mortgage-original.png",
+    "prompt": "Use case: ads-marketing. Create a single finished portrait 1024x1536 fictional ClearPath Financial mortgage prequalification advertisement as an intentionally flawed SOURCE creative for a compliance review demo. Only the ad image, not UI. Crisp typography, polished editorial house photograph: a modest contemporary American house, leafy garden, afternoon, no person. Wrong-brand cobalt blue/violet with white background and cobalt panel. Top: ClearPath FINANCIAL. Headline: Your new home. Already approved. Body: Prequalify today and start shopping with a guaranteed mortgage. CTA: Find your home. Footer: Prequalification is not a commitment to lend. Subject to verification and underwriting. Partner: Homewise · California. All text legible with margins. No license, assurance badges, or added claims."
+  },
+  "edit": {
+    "file": "mortgage-fixed.png",
+    "reference": "mortgage-original.png",
+    "prompt": "Use case: text-localization and ads-marketing compliance edit. Correct the exact original, preserving the house photograph, composition, wordmark, portrait format, and Homewise · California. Reviewer feedback: remove unconditional approval and guarantee; use forest #214d40, cream #f7f3e8, and sage #a8b89b in place of blue/violet; add a readable, high-contrast pale-sage qualification panel. Headline: Your next chapter starts here. Body: Get a clearer picture of your homebuying budget with mortgage prequalification. CTA: Explore prequalification. Footer: Prequalification is an estimate, not a loan approval or commitment to lend. Final approval requires verification and underwriting. Keep Homewise · California. Proposed draft awaiting separate affiliate/state review; do not invent licenses, verification badges, endorsements, or claims."
+  },
+  "note": "Prompts above preserve the substantive generation instructions in a concise form. This is fictional demo creative, not evidence of regulatory clearance."
+}

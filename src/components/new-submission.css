@@ -1,0 +1,8 @@
+.ns-form .ns-required {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.ns-form .ns-required-legend {
+  margin: 0 0 16px;
+}
